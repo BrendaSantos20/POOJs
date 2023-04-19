@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="objetos.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <h1>LISTA DE PESSOAS</h1>
+    </header>
+    <main>
+
+        <div class="card">
+            <div class="input-group">
+                <label for="nome">Nome</label>
+                <input type="text" id="nome" placeholder="Digite o nome">
+            </div>
+            <div class="line-input-group">
+                <div class="input-group">
+                    <label for="idade">Idade</label>
+                    <input type="text" id="idade" placeholder="Digite a idade" maxlength="3">
+                </div>
+                <div class="input-group">
+                    <label for="cpf">CPF</label>
+                    <input type="text" id="cpf" placeholder="Digite o CPF">
+                </div>
+            </div>
+            <div class="buttons">
+                <button onclick="pessoa.cancelar()" class="botao secundario">Limpar</button>
+                <button onclick="pessoa.salvar()" class="botao primario">Salvar</button>
+            </div>
+        </div>
+        <div class="content">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Nome</th>
+                        <th>Idade</th>
+                        <th>CPF </th>
+                    </tr>
+                </thead>
+                <tbody id="tbody">
+
+                </tbody>
+        </div>
+
+        </tr>
+        </table>
+        </div>
+    </main>
+
+    <script src="mascaraCpf.js"></script>
+    <script src="mascaraIdade.js"></script>
+    <script src="objetos.JS"></script>
+</body>
+
+</html>
